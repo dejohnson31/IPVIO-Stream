@@ -387,11 +387,13 @@ internal fun PinPad(title: String, hint: String?, error: String?, onSubmit: (Str
 private fun RegionPage(ctx: Context) {
     val langOpts = listOf("Automatisch (Gerät)") + I18nCore.NATIVE
     val li = if (General.lang.isBlank()) 0 else I18nCore.CODES.indexOf(General.lang) + 1
+    if (false) { // NEONGRID v0.1: English only, language picker hidden
     SectionTitle("Sprache")
     SelectRow("Sprache der App", if (li == 0) "Automatisch (Gerät)" else I18nCore.NATIVE[li - 1], langOpts, li) {
         General.setLang(ctx, if (it == 0) "" else I18nCore.CODES[it - 1])
     }
     Hint("Alle Menüs und Hinweise erscheinen in dieser Sprache. Beschreibungen, Besetzung und Titel-Infos kommen von TMDB und werden in derselben Sprache geladen, sobald du einen Titel öffnest. Namen von Sendern, Filmen und Kategorien stammen von deinem Anbieter und bleiben unverändert.")
+    }
     SectionTitle("Uhrzeit")
     val fmts = listOf("Automatisch (Gerät)", "24 Stunden (14:30)", "12 Stunden (2:30 PM)")
     SelectRow("Zeitformat", fmts[General.timeFmt], fmts, General.timeFmt) { General.setTimeFmt(ctx, it) }

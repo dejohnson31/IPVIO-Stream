@@ -1,6 +1,6 @@
-# Damon's IPTV Experience
+# NEONGRID — Damon's IPTV Experience
 
-A customized IPTV player for Amazon Fire TV and Android TV, based on [IPVIO Stream](https://github.com/Emrodev/IPVIO-Stream) by EmroDev (GPLv3). This fork is also GPLv3.
+A futuristic, cyber-styled IPTV player for Amazon Fire TV and Android TV, based on [IPVIO Stream](https://github.com/Emrodev/IPVIO-Stream) by EmroDev (GPLv3). This fork is also GPLv3.
 
 > Contains no channels or content. Users add their own Xtream Codes / M3U sources.
 

@@ -30,8 +30,8 @@ object Lang {
     val index: Int
         get() {
             ensureLoaded()
-            val c = General.lang
-            return if (c.isBlank()) I18nCore.indexForSystem(Locale.getDefault().language) else I18nCore.CODES.indexOf(c).coerceAtLeast(0)
+            // NEONGRID v0.1: English only. Other languages can be re-enabled later.
+            return I18nCore.CODES.indexOf("en")
         }
 
     fun code(): String = I18nCore.CODES[index]
