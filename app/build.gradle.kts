@@ -32,12 +32,12 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.ipvio.stream"
+        applicationId = "com.eleganda.iptv"
         minSdk = 24
         targetSdk = 37
         // Raise both for every release; the GitHub release tag must match versionName (e.g. tag "v1.1").
         versionCode = 4
-        versionName = "1.3"
+        versionName = "0.1.0"
         // Name unter dem Symbol; der Debug-Build überschreibt ihn (siehe buildTypes)
         manifestPlaceholders["appLabel"] = "IPVIO Stream"
 
